@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator_body.css">
+  </head>
+
+  <body>
+
+    <div class="calculator-page">
+
+      <div class="calculator-border">
+
+        <div class="js-show-calculation">
+
+          <div class="calculation-full-box">
+
+            <div class="previous-calculation"></div>
+
+            <div class="js-input-calculation"></div>
+
+          </div>
+          
+          
+        </div>
+
+
+        <div class="button-lines">
+
+          <div class="number-buttons">
+
+            <button 
+              class="numbers" class="numbers" 
+              onclick="updateCalculation ('leftBracket');
+            ">(</button>
+
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('rightBracket');
+            ">)</button>
+
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('parcent');  
+            "><=</button>
+
+            <button 
+              class="clear"
+              onclick="updateCalculation ('clear');
+            ">Clear</button>
+          </div>
+
+
+
+
+
+          <div class="number-buttons">
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('one');  
+            ">1</button>
+
+            <button 
+              class="numbers" class="numbers" 
+              onclick="updateCalculation ('two');
+            ">2</button>
+
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('three');
+            ">3</button>
+
+            <button 
+              class="operations" 
+              onclick="updateCalculation ('addition');
+            ">+</button>
+          </div>
+
+
+
+
+          <div class="number-buttons">
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('four');
+            ">4</button>
+
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('five');
+            ">5</button>
+
+            <button 
+              class="numbers" 
+              onclick="updateCalculation ('six');
+            ">6</button>
+
+            <button 
+              class="operations"
+              onclick="updateCalculation ('substraction');
+            ">-</button>
+          </div>
+
+
+
+
+
+          <div class="number-buttons">
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('seven');
+            ">7</button>
+
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('eight');
+            ">8</button>
+
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('nine');
+            ">9</button>
+
+            <button 
+              class="operations"
+              onclick="updateCalculation ('multiplication');
+            ">*</button>
+          </div>
+
+
+
+
+
+          <div class="number-buttons">
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('zero');
+            ">0</button>
+
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('decimal');
+            ">.</button>
+
+            <button 
+              class="numbers"
+              onclick="updateCalculation ('equal');
+            ">=</button>
+
+            <button 
+              class="operations"
+              onclick="updateCalculation ('division');
+            ">/</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+    <script src="script/calculatorscript.js"></script>
+    
+  </body>
+</html>
